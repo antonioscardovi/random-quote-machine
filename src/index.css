@@ -1,13 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Signika:wght@300;400;500&display=swap');
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F28F3B;
+  font-family: 'Signika', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#quote-box {
+  background-color: #eee;
+  box-shadow: 2px 2px 10px #333;
+  width: 500px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#text {
+  color: #3e363f;
+  transition: opacity 2s ease-in-out;
+  font-weight: 400;
+}
+
+#author {
+  text-align: right;
+  color: #3e363f;
+  margin-right: 21px;
+  font-style: italic;
+  transition: 1s;
+}
+
+#actions {
+  display: flex;
+  justify-content: space-around;
+  margin: 55px 0 10px 0;
+}
+
+#tweet-quote {
+  background-color: #0091AD;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 12px;
+  margin-left: 10px;
+}
+
+#tweet-quote:hover {
+  opacity: 0.9;
+}
+
+#new-quote {
+  padding: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  color: #eee;
+  background-color: #0091AD;
+  outline:none;
+  user-select: none;
+  margin-left: 310px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#new-quote:hover {
+  opacity: 0.9;
+}
+
+#new-quote:active {
+  background-color: rgba(0,145,173, 0.5);
+}
+
+#git-link {
+  text-decoration: none;
+  color: #333
 }
